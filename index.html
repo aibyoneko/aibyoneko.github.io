@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>愛ねこのホームページ</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 </head>
@@ -20,8 +21,8 @@
                 <ul class="nav-menu">
                     <li><a href="#" class="nav-link" id="sample-voice-link">サンプルボイス</a></li>
                     <li><a href="#pricing" class="nav-link">料金表</a></li>
-                    <li><a href="#guidelines" class="nav-link">ご依頼</a></li>
-                    <li><a href="#cta-section" class="nav-link contact-nav">お問い合わせ</a></li>
+                    <li><a href="#guidelines" class="nav-link">詳細</a></li>
+                    <li><a href="#cta-section" class="nav-link contact-nav">ご依頼</a></li>
                 </ul>
                 <div class="hamburger"><span></span><span></span><span></span></div>
             </div>
@@ -112,7 +113,8 @@
         </section>
         <section id="pricing" class="pricing">
             <div class="container">
-                <div class="section-header"><img src="aibyoneko_sozai_webp/mini/5.webp" alt="愛病ねこ" class="mini-character">
+                <div class="section-header"><img src="aibyoneko_sozai_webp/mini/5.webp" alt="愛病ねこ"
+                        class="mini-character">
                     <h2 class="section-title">料金表</h2>
                 </div>
                 <div class="pricing-table">
@@ -167,8 +169,9 @@
         </section>
         <section id="guidelines" class="guidelines">
             <div class="container">
-                <div class="section-header"><img src="aibyoneko_sozai_webp/mini/2.webp" alt="愛病ねこ" class="mini-character">
-                    <h2 class="section-title">ご依頼について</h2>
+                <div class="section-header"><img src="aibyoneko_sozai_webp/mini/2.webp" alt="愛病ねこ"
+                        class="mini-character">
+                    <h2 class="section-title">ご依頼の詳細</h2>
                 </div>
                 <div class="guidelines-content">
                     <div class="contact-section">
@@ -232,12 +235,50 @@
                     <div id="cta-section" class="cta-section">
                         <div class="section-header"><img src="aibyoneko_sozai_webp/mini/1.webp" alt="愛病ねこ"
                                 class="mini-character">
-                            <h3>お問い合わせ</h3>
-                        </div><a href="mailto:AibyoNeko@gmail.com" class="contact-button">依頼フォーラム</a>
-                        <p></p>
-                        <p>【メールアドレス】aibyoneko@gmail.com</p>
-                        <p></p>
-                        <p>「お見積もり」や「空きスケジュール」だけのお問い合わせもOKです。お気軽にご相談ください！</p>
+                            <h3>ご依頼のお見積り
+                            </h3>
+                        </div>
+                        <div class="form-container">
+                            <form id="contact-form" class="contact-form" action="#" method="post">
+                                <div class="form-group">
+                                    <label for="name">お名前 <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">メールアドレス <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="script-text">台本本文 <span class="required">*</span></label>
+                                    <textarea id="script-text" name="script-text" rows="6" placeholder="収録したい台本の内容をご記入ください" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="script-url">台本URL</label>
+                                    <input type="url" id="script-url" name="script-url" placeholder="台本のURLがある場合はこちらに">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="request-details">依頼詳細 <span class="required">*</span></label>
+                                    <textarea id="request-details" name="request-details" rows="4" placeholder="声の種類、納期、その他ご要望をお書きください" required></textarea>
+                                </div>
+                                
+                                <div class="form-buttons">
+                                    <button type="submit" class="submit-btn">送信</button>
+                                    <button type="reset" class="reset-btn">フォームをクリア</button>
+                                </div>
+                                
+                                <div id="form-success" class="form-message success" style="display: none;">
+                                    <p>お問い合わせありがとうございます！<br>内容を確認後、ご連絡いたします。</p>
+                                </div>
+                                
+                                <div id="form-error" class="form-message error" style="display: none;">
+                                    <p>送信エラーが発生しました。もう一度お試しください。</p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,6 +291,7 @@
     </footer><audio id="audio-player" preload="none"></audio>
     <script src="simple-audio.js"></script>
     <script src="script.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 
 </html>
