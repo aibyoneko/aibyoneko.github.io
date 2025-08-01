@@ -26,7 +26,7 @@
     font-weight: 500;
     color: #2c2c2c;
     font-size: 1rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
 }
 
 .required {
@@ -40,7 +40,7 @@
     border: 2px solid #f0f0f0;
     border-radius: 12px;
     font-size: 1rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.9);
 }
@@ -78,22 +78,22 @@
     border-radius: 12px;
     font-size: 1rem;
     font-weight: 600;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
     min-width: 140px;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8a5b 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
 }
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.4);
-    background: linear-gradient(135deg, #ff5a8a, #ff7d9a);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
+    background: var(--primary-color);
 }
 
 .submit-btn:active {

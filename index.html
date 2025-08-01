@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="description" content="愛病ねこ - 同人声優VTuber。かわいい系からお姉さん系まで幅広い声でお届けします。">
     <meta name="theme-color" content="#4a90e2">
     <title>愛ねこのホームページ</title>
@@ -12,10 +12,6 @@
     <link rel="preload" href="aibyoneko_sozai_webp/name-logo.webp" as="image">
     <link rel="preload" href="aibyoneko_sozai_webp/tatie.webp" as="image">
     
-    <!-- Critical CSS inlined -->
-    <style>
-    :root{--primary-color:#4a90e2;--secondary-color:#6ba3f0;--accent-color:#ff6b6b;--dark-color:#1a365d;--alt-dark-color:#2d5a87;--light-color:#ffffff;--card-bg:#f7fafc;--main-bg:#ffffff;--gray-color:#4a5568;--gradient-bg:linear-gradient(135deg,#f7fafc 0%,#e2e8f0 50%,#cbd5e0 100%);--particle-color:rgba(74,144,226,0.4);--border-color:#e2e8f0;--shadow-color:rgba(74,144,226,0.1);--section-bg:#f8fafc;--section-text:#2d3748}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Noto Sans JP',sans-serif;line-height:1.6;color:var(--dark-color);overflow-x:hidden;background:var(--main-bg)}.header{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);z-index:1000;box-shadow:0 2px 20px rgba(0,0,0,0.1)}.nav-container{max-width:1600px;margin:0 auto;padding:0 2rem;display:flex;justify-content:flex-start;align-items:center;height:70px;gap:2rem}.logo{flex-shrink:0;display:flex;align-items:center;gap:0.5rem}.logo h1{color:var(--primary-color);font-size:1.5rem;font-weight:700}.nav-menu{display:flex;list-style:none;gap:2rem;margin-left:auto}.nav-link{text-decoration:none;color:var(--dark-color);font-weight:500;transition:color 0.3s ease;position:relative}.nav-link:hover{color:var(--primary-color)}.contact-nav{background:var(--accent-color)!important;color:var(--light-color)!important;padding:0.5rem 1rem!important;border-radius:20px!important;transition:all 0.3s ease!important}.hamburger{display:none;flex-direction:column;cursor:pointer;margin-left:auto}.hamburger span{width:25px;height:3px;background:var(--dark-color);margin:3px 0;transition:0.3s}.main{margin-top:60px}.hero{height:100vh;position:relative;overflow:hidden}.hero-background{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,var(--main-bg) 0%,var(--secondary-color) 50%,var(--primary-color) 100%);opacity:0.1;z-index:0}.hero-container{display:flex;align-items:flex-start;justify-content:space-between;height:52.3rem;max-width:1620px;margin:0 auto;padding:0rem 2.7rem 1.35rem 2.7rem;position:relative;z-index:1;transform:scale(0.95);transform-origin:center center}.hero-left{width:70%;display:flex;flex-direction:column;justify-content:center;gap:2rem;padding-right:2rem;position:relative;z-index:1}.hero-content{text-align:left}.hero-title{width:16rem;height:auto;margin-bottom:1rem}.hero-subtitle{font-size:1.55rem;color:var(--primary-color);margin-bottom:1rem;font-weight:600}.hero-description{font-size:1rem;color:var(--alt-dark-color);margin-bottom:2rem}.character-container{position:absolute;right:0;top:2.5%;width:55%;height:100%;display:flex;justify-content:center;align-items:flex-end;z-index:0;pointer-events:none}.character-image{position:relative;width:100%;max-width:1500px;height:89vh;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}.character-image img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}@media (max-width:768px){.hero{height:auto;min-height:100vh}.hero-container{transform:scale(1);max-width:100%;padding:1rem;flex-direction:column;align-items:flex-start;height:auto}.hero-left{width:100%;padding-right:0;text-align:left;gap:1.5rem;z-index:2}.character-container{position:absolute;right:-20%;top:0;width:89%;height:100%;opacity:1;z-index:0}.nav-menu{position:fixed;left:-100%;top:70px;flex-direction:column;background:rgba(255,255,255,0.95);width:100%;text-align:center;transition:0.3s;box-shadow:0 10px 27px rgba(0,0,0,0.05);padding:2rem 0;gap:1rem}.nav-menu.active{left:0}.hamburger{display:flex}.nav-container{padding:0 1rem}}
-    </style>
     
     <!-- Deferred CSS -->
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
@@ -23,10 +19,6 @@
     <link rel="stylesheet" href="form-styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="form-styles.css"></noscript>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -34,10 +26,10 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-                    <h1>愛病ねこ</h1>
+                    <img src="aibyoneko_sozai_webp/愛病ねこ.webp" alt="愛病ねこ" class="logo-image" id="header-logo" style="cursor: pointer;">
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#" class="nav-link" id="sample-voice-link">サンプルボイス</a></li>
+                    <li><a href="#hero" class="nav-link" id="sample-voice-link">サンプルボイス</a></li>
                     <li><a href="#pricing" class="nav-link">料金表</a></li>
                     <li><a href="#guidelines" class="nav-link">詳細</a></li>
                     <li><a href="#cta-section" class="nav-link contact-nav">今すぐご依頼</a></li>
@@ -52,8 +44,9 @@
             <div class="hero-container">
                 <div class="hero-left">
                     <div class="hero-content"><img id="hero-title" class="hero-title"
-                            src="aibyoneko_sozai_webp/name-logo.webp" alt="愛病ねこ">
-                        <p class="hero-subtitle">同人声優VTuber</p>
+                            src="aibyoneko_sozai_webp/name-logo.webp" alt="愛病ねこ" style="cursor: pointer;">
+                            <div></div>
+                        <img src="aibyoneko_sozai_webp/同人声優VTuber.webp" alt="同人声優VTuber" class="hero-subtitle-image">
                         <p class="hero-description">ず～っと！私の声をお届けする事が夢です！✨️</p>
                         <div class="hero-social"><a href="https://youtube.com/channel/UCpuZlTaB8pOaLPtAudMVzaA/streams/"
                                 target="_blank" class="social-link youtube"><svg width="24" height="24"
@@ -125,7 +118,7 @@
                     </div>
                 </div>
                 <div class="character-container">
-                    <div class="character-image"><img src="aibyoneko_sozai_webp/tatie.webp" alt="愛病ねこ キャラクター" loading="lazy" /></div>
+                    <div class="character-image"><img src="aibyoneko_sozai_webp/tatie.webp" alt="愛病ねこ キャラクター" class="tatie-image" loading="lazy" /></div>
                 </div>
             </div>
         </section>
@@ -256,6 +249,9 @@
                             <h3>ご依頼のお見積り
                             </h3>
                         </div>
+                        <div class="form-notice" style="display: none;">
+                            <p>24時間いつでも連絡OK。1日～3日間に記載のメールアドレス宛てに返信させていただきます。</p>
+                        </div>
                         <div class="form-container">
                             <form id="contact-form" class="contact-form" action="#" method="post">
                                 <div class="form-group">
@@ -303,7 +299,7 @@
                                 <h4>メールでのお問い合わせ</h4>
                                 <p>フォーム以外でのお問い合わせは下記メールアドレスまで</p>
                                 <div class="email-info">
-                                    <strong>aibyoneko@gmail.com</strong>
+                                    <strong id="email-copy" style="cursor: pointer;">aibyoneko@gmail.com</strong>
                                 </div>
                             </div>
                         </div>
