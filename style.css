@@ -1127,7 +1127,7 @@ section {
     line-height: 1.6;
     color: var(--section-text);
     font-weight: 500;
-    text-align: left
+    text-align: center
 }
 
 .email-info {
@@ -1191,11 +1191,11 @@ section {
 
 @media (max-width:480px) {
     .logo-image {
-        max-width: 60px
+        max-width: 110px
     }
 
     .hero-subtitle-image {
-        max-width: 100px
+        max-width: 180px
     }
 
     .hero-title {
