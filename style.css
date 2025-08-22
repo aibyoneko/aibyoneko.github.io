@@ -113,6 +113,36 @@ body {
     display: none !important
 }
 
+.contact-nav:focus {
+    outline: none !important;
+    background: var(--accent-color) !important
+}
+
+.contact-nav:active {
+    background: var(--primary-color) !important;
+    transform: translateY(0) !important
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .contact-nav:focus {
+        background: var(--accent-color) !important;
+        transform: none !important
+    }
+    
+    .nav-link {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .contact-nav:focus-visible {
+        background: var(--accent-color) !important
+    }
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -395,14 +425,15 @@ body {
 .character-container {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -5%;
     width: 55%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     z-index: -10;
-    pointer-events: none
+    pointer-events: none;
+    overflow: visible
 }
 
 .character-image {
@@ -411,7 +442,7 @@ body {
     max-width: 1500px;
     height: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     overflow: hidden
 }
@@ -929,13 +960,13 @@ section {
     }
 
     .character-container {
-        height: 50vh;
-        min-height: 300px
+        height: 60vh;
+        min-height: 400px
     }
 
     .character-image {
-        height: 50vh;
-        min-height: 300px;
+        height: 60vh;
+        min-height: 400px;
         max-width: 300px
     }
 
@@ -1019,13 +1050,13 @@ section {
     }
 
     .character-container {
-        height: 40vh;
-        min-height: 250px
+        height: 55vh;
+        min-height: 350px
     }
 
     .character-image {
-        height: 40vh;
-        min-height: 250px;
+        height: 55vh;
+        min-height: 350px;
         max-width: 250px
     }
 
