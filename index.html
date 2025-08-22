@@ -250,7 +250,7 @@
                             </h3>
                         </div>
                         <div class="form-notice" style="display: none;">
-                            <p>24時間いつでも連絡OK。1日～3日間に記載のメールアドレス宛てに返信させていただきます。</p>
+                            <p>24時間いつでも連絡OK。1日～3日以内に記載のメールアドレス宛てに返信させていただきます。</p>
                         </div>
                         <div class="form-container">
                             <form id="contact-form" class="contact-form" action="#" method="post">
@@ -263,25 +263,19 @@
                                     <label for="email">メールアドレス <span class="required">*</span></label>
                                     <input type="email" id="email" name="email" required>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <label for="script-text">台本本文 <span class="required">*</span></label>
-                                    <textarea id="script-text" name="script-text" rows="6" placeholder="収録したい台本の内容をご記入ください" required></textarea>
+                                                                <div class="form-group">
+                                    <label for="script-url">件名 <span class="required">*</span></label>
+                                    <input type="text" id="script-url" name="script-url" placeholder="依頼概要" required>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="script-url">台本URL</label>
-                                    <input type="url" id="script-url" name="script-url" placeholder="台本のURLがある場合はこちらに">
+                                    <label for="script-text">本文 <span class="required">*</span></label>
+                                    <textarea id="script-text" name="script-text" rows="6" placeholder="お問い合わせ内容をご記入ください" required></textarea>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <label for="request-details">依頼詳細 <span class="required">*</span></label>
-                                    <textarea id="request-details" name="request-details" rows="4" placeholder="声の種類、納期、その他ご要望をお書きください" required></textarea>
-                                </div>
+
                                 
                                 <div class="form-buttons">
                                     <button type="submit" class="submit-btn">送信</button>
-                                    <button type="reset" class="reset-btn">フォームをクリア</button>
                                 </div>
                                 
                                 <div id="form-success" class="form-message success" style="display: none;">
@@ -297,9 +291,8 @@
                         <div class="contact-info-section">
                             <div class="notice-card">
                                 <h4>メールでのお問い合わせ</h4>
-                                <p>フォーム以外でのお問い合わせは下記メールアドレスまで</p>
                                 <div class="email-info">
-                                    <strong id="email-copy" style="cursor: pointer;">aibyoneko@gmail.com</strong>
+                                    <strong id="email-copy" style="cursor: pointer;">クリップボードにコピー：aibyoneko@gmail.com</strong>
                                 </div>
                             </div>
                         </div>
